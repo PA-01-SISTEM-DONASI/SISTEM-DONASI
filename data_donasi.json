@@ -1,0 +1,25 @@
+[
+    {
+        "Nama": "ari",
+        "No rek": "0000",
+        "Jumlah": "20000"
+    },
+    {
+        "nama_pendonasi": "arham",
+        "method": "1",
+        "norek": 0,
+        "jumlah": 291023
+    },
+    {
+        "nama_pendonasi": "asdkajsk",
+        "method": "1",
+        "norek": 122,
+        "jumlah": 1000
+    },
+    {
+        "nama_pendonasi": "sadad",
+        "method": "1",
+        "norek": 12,
+        "jumlah": 12
+    }
+]
