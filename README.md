@@ -10,6 +10,7 @@ Jihan Shafira Rahmah | 2509116073
 
 # Flowchart
 # RUN 1
+Pada run pertama ini akan masuk ke dalam page 
 # RUN 2
 # RUN 3
 # RUN 4
