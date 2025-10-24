@@ -1,6 +1,6 @@
 import json
 import os
-import stdiomask
+import pwinput
 import time
 import re
 from prettytable import PrettyTable
@@ -32,63 +32,57 @@ def save_json(file, data):
     with open(file, 'w') as f:
         json.dump(data, f, indent=4)
 
-#BUAT REGIST USER
+#REGISTER
 def register():
     clear_screen()
     users = load_json(USER_FILE)
-    username = input("Username baru: ")
-    password = stdiomask.getpass("Password: ")
-
-    if not re.match(r'^[A-Za-z0-9_]+$', username):
-        print("Username hanya boleh berisi huruf, angka, dan underscore (_).")
-        input("Tekan Enter untuk kembali...")
-        return
-    
-    for u in users:
-        if u["username"] == username:
+    while True:
+        username = input("Username baru: ").strip()
+        if not re.match(r'^[A-Za-z0-9_]+$', username):
+            print("Username hanya boleh berisi huruf, angka, dan underscore (_).")
+            continue
+        if any(u["username"] == username for u in users):
             print("Username sudah terdaftar.")
-            input("Tekan Enter untuk kembali...")
-            return
+            continue
+        password = pwinput.pwinput("Password: ")
+        if not password:
+            print("Password tidak boleh kosong.")
+            continue
+        users.append({
+            "username": username,
+            "password": password,
+            "role": "User",
+            "saldo": 0
+        })
+        save_json(USER_FILE, users)
+        print("Registrasi berhasil!")
+        input("Tekan Enter untuk kembali...")
+        break
 
-    users.append({
-        "username": username,
-        "password": password,
-        "role": "User",
-        "saldo": 0
-    })
-    save_json(USER_FILE, users)
-    print("Registrasi berhasil!")
-    input("Tekan Enter untuk kembali...")
-
-#BUAT LOGIN
+#LOGIN
 def login():
     clear_screen()
     users = load_json(USER_FILE)
     attempts = LOGIN_ATTEMPTS
-
     while attempts > 0:
-        try:
-            username = input("Username: ")
-            password = stdiomask.getpass("Password: ")
-        except (KeyboardInterrupt, EOFError):
-            print("\nInput dibatalkan.")
-            return None
-
+        username = input("Username: ").strip()
+        password = pwinput.pwinput("Password: ").strip()
+        if not username or not password:
+            print("Username dan password tidak boleh kosong.")
+            continue
         for u in users:
             if u["username"] == username and u["password"] == password:
                 u["saldo"] = int(u.get("saldo", 0))
                 print("Login berhasil. Menyiapkan akun...")
                 time.sleep(1)
                 return u
-
         attempts -= 1
         print(f"Username atau password salah. Sisa percobaan: {attempts}")
-        if attempts == 0:
-            print("Kesempatan login habis. Kembali ke menu utama.")
-            time.sleep(1)
-            return None
+    print("Kesempatan login habis. Kembali ke menu utama.")
+    time.sleep(1)
+    return None
 
-#BUAT NAMPILIN DATA DONASI
+#NAMPILIN DONASI
 def tampilkan_donasi(current_user=None):
     clear_screen()
     data = load_json(DONASI_FILE)
@@ -96,75 +90,68 @@ def tampilkan_donasi(current_user=None):
         print("Belum ada data donasi.")
         input("Tekan Enter untuk kembali...")
         return
-
     if current_user and current_user["role"] == "User":
         data = [d for d in data if d.get("username") == current_user["username"]]
-
     if not data:
         print("Tidak ada donasi untuk akun ini.")
         input("Tekan Enter untuk kembali...")
         return
-
     table = PrettyTable(["Nama Donatur", "Jumlah", "Metode", "Lokasi"])
     total = 0
     for d in data:
         jumlah_int = int(d.get("jumlah", 0))
         total += jumlah_int
         table.add_row([d.get("nama", "-"), f"Rp{jumlah_int:,}", d.get("metode", "-"), d.get("lokasi", "-")])
-
     print(table)
-
-#NAMPILIN TOTAL DONASI NYA USER
     if current_user and current_user["role"] == "Staff":
         print(f"\nTotal Donasi Keseluruhan: Rp{total:,}")
     else:
         print(f"\nTotal Donasi Anda: Rp{total:,}")
-
     input("\nTekan Enter untuk kembali...")
 
-
+#NAMBAH DONASI
 def tambah_donasi(current_user):
     clear_screen()
     data = load_json(DONASI_FILE)
     users = load_json(USER_FILE)
 
-    print("=== PILIH LOKASI DONASI ===")
-    for i, l in enumerate(LOKASI, start=1):
-        print(f"{i}. {l}")
-    try:
-        pilihan = int(input("Pilih lokasi (nomor): "))
-        if not (1 <= pilihan <= len(LOKASI)):
-            print("Pilihan lokasi tidak valid.")
-            input("Tekan Enter untuk kembali...")
-            return
-    except ValueError:
-        print("Input lokasi harus angka.")
-        input("Tekan Enter untuk kembali...")
-        return
+    while True:
+        print("=== PILIH LOKASI DONASI ===")
+        for i, l in enumerate(LOKASI, start=1):
+            print(f"{i}. {l}")
+        try:
+            pilihan = int(input("Pilih lokasi (nomor): "))
+            if 1 <= pilihan <= len(LOKASI):
+                lokasi = LOKASI[pilihan - 1]
+                break
+            else:
+                print("Pilihan lokasi tidak valid.")
+        except ValueError:
+            print("Input harus angka.")
 
-    lokasi = LOKASI[pilihan - 1]
-    nama = input("Nama Donatur: ")
-    if not re.match(r'^[A-Za-z0-9 ]+$', nama):
-        print("Nama hanya boleh berisi huruf, angka, dan spasi.")
-        input("Tekan Enter untuk kembali...")
-        return
-    
-    try:
-        jumlah = int(input("Jumlah Donasi: "))
-    except ValueError:
-        print("Jumlah harus angka.")
-        input("Tekan Enter untuk kembali...")
-        return
+    while True:
+        nama = input("Nama Donatur: ").strip()
+        if not re.match(r'^[A-Za-z0-9 ]+$', nama):
+            print("Nama hanya boleh berisi huruf, angka, dan spasi.")
+        elif not nama:
+            print("Nama tidak boleh kosong.")
+        else:
+            break
 
-    if jumlah < 10_000:
-        print("Minimal donasi adalah Rp10.000.")
-        input("Tekan Enter untuk kembali...")
-        return
-    if jumlah > MAX_DONASI:
-        print(f"Maksimal donasi adalah Rp{MAX_DONASI:,}")
-        input("Tekan Enter untuk kembali...")
-        return
+    while True:
+        try:
+            jumlah = int(input("Jumlah Donasi: "))
+        except ValueError:
+            print("Jumlah harus angka.")
+            continue
+        if jumlah < 10_000:
+            print("Minimal donasi Rp10.000.")
+        elif jumlah > MAX_DONASI:
+            print(f"Maksimal donasi Rp{MAX_DONASI:,}.")
+        else:
+            break
 
+#PEMBAYARAN
     if current_user["role"] == "Staff":
         metode = "Tunai (dicatat oleh Staff)"
         sisa_saldo = None
@@ -172,28 +159,24 @@ def tambah_donasi(current_user):
         for u in users:
             if u["username"] == current_user["username"]:
                 saldo_user = int(u.get("saldo", 0))
-                if saldo_user < jumlah:
-                    print("Saldo tidak cukup.")
+                while saldo_user < jumlah:
+                    print(f"Saldo tidak cukup (Rp{saldo_user:,}).")
                     top = input("Ingin top up? (y/n): ").lower()
                     if top == "y":
                         topup(current_user)
+                        users = load_json(USER_FILE)
+                        saldo_user = int(next(user['saldo'] for user in users if user['username'] == current_user['username']))
                     else:
                         print("Transaksi dibatalkan.")
                         input("Tekan Enter untuk kembali...")
                         return
-                    
-                saldo_user = int(u.get("saldo", 0))
-                if saldo_user < jumlah:
-                    print("Saldo masih tidak cukup.")
-                    input("Tekan Enter untuk kembali...")
-                    return
                 u["saldo"] = saldo_user - jumlah
                 sisa_saldo = u["saldo"]
                 save_json(USER_FILE, users)
                 metode = "E-Wallet"
                 break
 
-    # Simpan donasi ke file
+#NYIMPAN DONASI
     data.append({
         "username": current_user["username"],
         "nama": nama,
@@ -203,7 +186,7 @@ def tambah_donasi(current_user):
     })
     save_json(DONASI_FILE, data)
 
-    # Tampilkan struk
+#STRUK DONASI
     print("\n===== STRUK DONASI =====")
     print(f"Nama    : {nama}")
     print(f"Metode  : {metode}")
@@ -212,15 +195,13 @@ def tambah_donasi(current_user):
     print("========================")
     print("Status Donasi : SUKSES")
     print("TERIMA KASIH ATAS DONASINYA")
-
     if current_user["role"] == "User":
         print(f"Sisa Saldo Anda: Rp{int(sisa_saldo):,}")
     else:
         print("(Staff tidak menggunakan saldo)")
-
     input("\nTekan Enter untuk kembali...")
 
-
+#NGEDIT DONASI
 def edit_donasi(current_user):
     clear_screen()
     data = load_json(DONASI_FILE)
@@ -228,48 +209,67 @@ def edit_donasi(current_user):
         print("Belum ada data donasi.")
         input("Tekan Enter untuk kembali...")
         return
+    while True:
+        tampilkan_donasi(current_user)
+        nama = input("Masukkan nama donatur yang ingin diedit: ").strip()
+        for d in data:
+            if d.get("nama", "").lower() == nama.lower() and (current_user["role"] == "Staff" or d.get("username") == current_user["username"]):
+                print(f"\nEdit data donasi untuk {d['nama']}")
+                if current_user["role"] == "Staff":
+                    d['nama'] = input(f"Nama Donatur ({d['nama']}): ") or d['nama']
+                    # Lokasi baru
+                    while True:
+                        for i, l in enumerate(LOKASI, start=1):
+                            print(f"{i}. {l}")
+                        pilih_lokasi = input(f"Pilih lokasi baru (1-{len(LOKASI)}) atau Enter untuk tidak mengubah: ").strip()
+                        if not pilih_lokasi:
+                            break
+                        try:
+                            idx = int(pilih_lokasi)
+                            if 1 <= idx <= len(LOKASI):
+                                d['lokasi'] = LOKASI[idx - 1]
+                                break
+                            else:
+                                print("Pilihan lokasi tidak valid.")
+                        except ValueError:
+                            print("Input tidak valid.")
+                else:
+                    d['nama'] = input(f"Nama Donatur ({d['nama']}): ") or d['nama']
+                    while True:
+                        jumlah_baru = input(f"Jumlah Donasi ({d['jumlah']}): ").strip()
+                        if not jumlah_baru:
+                            break
+                        try:
+                            jumlah_baru = int(jumlah_baru)
+                            if 10_000 <= jumlah_baru <= MAX_DONASI:
+                                # cek saldo user
+                                users = load_json(USER_FILE)
+                                for u in users:
+                                    if u["username"] == current_user["username"]:
+                                        saldo_user = int(u.get("saldo", 0)) + int(d['jumlah'])
+                                        if jumlah_baru > saldo_user:
+                                            print("Saldo tidak cukup untuk jumlah baru.")
+                                        else:
+                                            u["saldo"] = saldo_user - jumlah_baru
+                                            save_json(USER_FILE, users)
+                                            d['jumlah'] = jumlah_baru
+                                            break
+                                break
+                            else:
+                                print(f"Jumlah harus antara Rp10.000 - Rp{MAX_DONASI:,}.")
+                        except ValueError:
+                            print("Jumlah harus angka.")
+                    d['lokasi'] = input(f"Lokasi ({d['lokasi']}): ") or d['lokasi']
+                save_json(DONASI_FILE, data)
+                print("Data donasi berhasil diperbarui.")
+                input("Tekan Enter untuk kembali...")
+                return
+        print("Data donatur tidak ditemukan.\n")
+        kembali = input("Ingin coba lagi? (y/n): ").lower()
+        if kembali != 'y':
+            break
 
-    tampilkan_donasi(current_user)
-    nama = input("Masukkan nama donatur yang ingin diedit: ")
-
-    for d in data:
-        if d.get("nama", "").lower() == nama.lower() and (current_user["role"] == "Staff" or d.get("username") == current_user["username"]):
-            print(f"\nEdit data donasi untuk {d['nama']}")
-
-            if current_user["role"] == "Staff":
-                d['nama'] = input(f"Nama Donatur ({d['nama']}): ") or d['nama']
-
-                print("\n=== PILIH LOKASI BARU ===")
-                for i, l in enumerate(LOKASI, start=1):
-                    print(f"{i}. {l}")
-                pilih_lokasi = input(f"Pilih lokasi (1-{len(LOKASI)}) atau Enter untuk tidak mengubah: ")
-                if pilih_lokasi.strip():
-                    try:
-                        idx = int(pilih_lokasi)
-                        if 1 <= idx <= len(LOKASI):
-                            d['lokasi'] = LOKASI[idx - 1]
-                        else:
-                            print("Pilihan lokasi tidak valid. Lokasi tidak diubah.")
-                    except ValueError:
-                        print("Input tidak valid. Lokasi tidak diubah.")
-
-            else:
-                d['nama'] = input(f"Nama Donatur ({d['nama']}): ") or d['nama']
-                try:
-                    d['jumlah'] = int(input(f"Jumlah Donasi ({d['jumlah']}): ") or d['jumlah'])
-                except ValueError:
-                    print("Jumlah harus angka. Edit dibatalkan.")
-                    input("Tekan Enter untuk kembali...")
-                    return
-                d['lokasi'] = input(f"Lokasi ({d['lokasi']}): ") or d['lokasi']
-
-            save_json(DONASI_FILE, data)
-            print("Data donasi berhasil diperbarui.")
-            input("Tekan Enter untuk kembali...")
-            return
-    print("Data donatur tidak ditemukan.")
-    input("Tekan Enter untuk kembali...")
-
+#HAPUS DONASI
 def hapus_donasi(current_user):
     clear_screen()
     data = load_json(DONASI_FILE)
@@ -277,62 +277,49 @@ def hapus_donasi(current_user):
         print("Belum ada data donasi.")
         input("Tekan Enter untuk kembali...")
         return
+    while True:
+        tampilkan_donasi(current_user)
+        nama = input("Masukkan nama donatur yang ingin dihapus: ").strip()
+        for i, d in enumerate(data):
+            if d.get("nama", "").lower() == nama.lower() and (current_user["role"] == "Staff" or d.get("username") == current_user["username"]):
+                konfirmasi = input(f"Yakin hapus donasi '{d['nama']}'? (y/n): ").lower()
+                if konfirmasi == 'y':
+                    del data[i]
+                    save_json(DONASI_FILE, data)
+                    print("Data donasi berhasil dihapus.")
+                else:
+                    print("Penghapusan dibatalkan.")
+                input("Tekan Enter untuk kembali...")
+                return
+        print("Data donatur tidak ditemukan.")
+        kembali = input("Ingin coba lagi? (y/n): ").lower()
+        if kembali != 'y':
+            break
 
-    tampilkan_donasi(current_user)
-    nama = input("Masukkan nama donatur yang ingin dihapus: ")
-
-    for i, d in enumerate(data):
-        if d.get("nama", "").lower() == nama.lower() and (current_user["role"] == "Staff" or d.get("username") == current_user["username"]):
-            konfirmasi = input(f"Yakin hapus donasi '{d['nama']}'? (y/n): ").lower()
-            if konfirmasi == 'y':
-                del data[i]
-                save_json(DONASI_FILE, data)
-                print("Data donasi berhasil dihapus.")
-            else:
-                print("Penghapusan dibatalkan.")
-            input("Tekan Enter untuk kembali...")
-            return
-    print("Data donatur tidak ditemukan.")
-    input("Tekan Enter untuk kembali...")
-
-def total_donasi():
-    clear_screen()
-    data = load_json(DONASI_FILE)
-    total = sum(int(d.get("jumlah", 0)) for d in data)
-    print(f"Total Donasi Keseluruhan: Rp{total:,}")
-    input("Tekan Enter untuk kembali...")
-
-#INI UNTUK TOP AP DAP
+#TOPAP
 def topup(current_user):
     clear_screen()
     users = load_json(USER_FILE)
-    try:
-        nominal = int(input("Masukkan nominal top up: "))
-    except ValueError:
-        print("Nominal harus angka.")
-        input("Tekan Enter untuk kembali...")
-        return
-
-    if nominal <= 14_999:
-        print("Minimal top up adalah Rp.15.000.")
-        input("Tekan Enter untuk kembali...")
-        return
-    if nominal > MAX_TOPUP:
-        print(f"Maksimal top up per transaksi adalah Rp{MAX_TOPUP:,}")
-        input("Tekan Enter untuk kembali...")
-        return
-
+    while True:
+        try:
+            nominal = int(input("Masukkan nominal top up: "))
+        except ValueError:
+            print("Nominal harus angka.")
+            continue
+        if nominal < 15_000:
+            print("Minimal top up Rp15.000.")
+        elif nominal > MAX_TOPUP:
+            print(f"Maksimal top up Rp{MAX_TOPUP:,}.")
+        else:
+            break
     for u in users:
         if u["username"] == current_user["username"]:
             saldo_sekarang = int(u.get("saldo", 0))
-            saldo_baru = saldo_sekarang + nominal
-
-            if saldo_baru > MAX_SALDO:
+            if saldo_sekarang + nominal > MAX_SALDO:
                 print(f"Saldo tidak boleh melebihi Rp{MAX_SALDO:,}")
                 input("Tekan Enter untuk kembali...")
                 return
-
-            u["saldo"] = saldo_baru
+            u["saldo"] = saldo_sekarang + nominal
             save_json(USER_FILE, users)
             print("Memproses top up...")
             time.sleep(0.8)
@@ -340,6 +327,7 @@ def topup(current_user):
             input("Tekan Enter untuk kembali...")
             return
 
+#CEK SALDO
 def cek_saldo(current_user):
     clear_screen()
     users = load_json(USER_FILE)
@@ -349,7 +337,7 @@ def cek_saldo(current_user):
             input("Tekan Enter untuk kembali...")
             return
 
-#MENU UTAMA USER INI DAP
+#MENU USER
 def menu_user(user):
     while True:
         clear_screen()
@@ -360,7 +348,6 @@ def menu_user(user):
         print("4. Cek Saldo")
         print("0. Logout")
         pilih = input("Pilih menu: ")
-
         if pilih == "1":
             tambah_donasi(user)
         elif pilih == "2":
@@ -375,18 +362,17 @@ def menu_user(user):
             print("Pilihan tidak valid.")
             input("Tekan Enter untuk lanjut...")
 
-#INI KALAU LOGIN STAFF
+#MENU STAFF
 def menu_staff(user):
     while True:
         clear_screen()
         print(f"=== MENU STAFF ({user['username']}) ===")
         print("1. Tambah Donasi")
-        print("2. Lihat Donasi (tampilkan total)")
+        print("2. Lihat Donasi (Total)")
         print("3. Edit Donasi")
         print("4. Hapus Donasi")
         print("0. Logout")
         pilih = input("Pilih menu: ")
-
         if pilih == "1":
             tambah_donasi(user)
         elif pilih == "2":
@@ -401,7 +387,7 @@ def menu_staff(user):
             print("Pilihan tidak valid.")
             input("Tekan Enter untuk lanjut...")
 
-#PROGRAM UTAMA INI DAP
+#MENU UTAMA
 def main():
     while True:
         clear_screen()
@@ -410,7 +396,6 @@ def main():
         print("2. Register")
         print("0. Keluar")
         pilihan = input("Pilih menu: ")
-
         if pilihan == "1":
             user = login()
             if user:
@@ -426,4 +411,5 @@ def main():
         else:
             print("Pilihan tidak valid.")
             input("Tekan Enter untuk lanjut...")
+
 main()
