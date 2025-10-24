@@ -1,25 +1,100 @@
 [
     {
-        "Nama": "ari",
-        "No rek": "0000",
-        "Jumlah": "20000"
+        "username": "staff",
+        "nama": "dapi",
+        "jumlah": 15000,
+        "metode": "Tunai (dicatat oleh Staff)",
+        "lokasi": "Posko B - Bengalon"
     },
     {
-        "nama_pendonasi": "arham",
-        "method": "1",
-        "norek": 0,
-        "jumlah": 291023
+        "username": "staff",
+        "nama": "dapiy",
+        "jumlah": 15000,
+        "metode": "E-Wallet",
+        "lokasi": "Posko A - Sangatta"
     },
     {
-        "nama_pendonasi": "hamsyah",
-        "method": "1",
-        "norek": 122,
-        "jumlah": 1000
+        "username": "staff",
+        "nama": "dapi",
+        "jumlah": 10000,
+        "metode": "Tunai (dicatat oleh Staff)",
+        "lokasi": "Posko B - Bengalon"
     },
     {
-        "nama_pendonasi": "sadad",
-        "method": "1",
-        "norek": 12,
-        "jumlah": 12
+        "username": "staff",
+        "nama": "dapi",
+        "jumlah": 10000,
+        "metode": "E-Wallet",
+        "lokasi": "Posko B - Bengalon"
+    },
+    {
+        "username": "staff",
+        "nama": "dapay",
+        "jumlah": 15000,
+        "metode": "Tunai (dicatat oleh Staff)",
+        "lokasi": "Posko A - Sangatta"
+    },
+    {
+        "username": "staff",
+        "nama": "dapay",
+        "jumlah": 15000,
+        "metode": "E-Wallet",
+        "lokasi": "Posko A - Sangatta"
+    },
+    {
+        "username": "staff",
+        "nama": "jihann",
+        "jumlah": 10000,
+        "metode": "Tunai (dicatat oleh Staff)",
+        "lokasi": "Posko A - Sangatta"
+    },
+    {
+        "username": "jihan",
+        "nama": "jihann",
+        "jumlah": 20000,
+        "metode": "E-Wallet",
+        "lokasi": "Posko A - Sangatta"
+    },
+    {
+        "username": "Davi",
+        "nama": "dapi",
+        "jumlah": 10000,
+        "metode": "E-Wallet",
+        "lokasi": "Posko A - Sangatta"
+    },
+    {
+        "username": "sab",
+        "nama": "Sab",
+        "jumlah": 150000,
+        "metode": "E-Wallet",
+        "lokasi": "Posko A - Sangatta"
+    },
+    {
+        "username": "Iqbal",
+        "nama": "Iqbal",
+        "jumlah": 15000,
+        "metode": "E-Wallet",
+        "lokasi": "Posko A - Sangatta"
+    },
+    {
+        "username": "Davi",
+        "nama": "Dapih",
+        "jumlah": 12000,
+        "metode": "E-Wallet",
+        "lokasi": "Posko A - Sangatta"
+    },
+    {
+        "username": "staff",
+        "nama": "Iqbal",
+        "jumlah": 15000,
+        "metode": "Tunai (dicatat oleh Staff)",
+        "lokasi": "Posko B - Bengalon"
+    },
+    {
+        "username": "Davi",
+        "nama": "Dappi",
+        "jumlah": 20000,
+        "metode": "E-Wallet",
+        "lokasi": "Posko A - Sangatta"
     }
 ]
