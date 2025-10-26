@@ -1,100 +1,34 @@
 [
     {
-        "username": "staff",
-        "nama": "dapi",
-        "jumlah": 15000,
-        "metode": "Tunai (dicatat oleh Staff)",
-        "lokasi": "Posko B - Bengalon"
-    },
-    {
-        "username": "staff",
-        "nama": "dapiy",
-        "jumlah": 15000,
-        "metode": "E-Wallet",
-        "lokasi": "Posko A - Sangatta"
-    },
-    {
-        "username": "staff",
-        "nama": "dapi",
-        "jumlah": 10000,
-        "metode": "Tunai (dicatat oleh Staff)",
-        "lokasi": "Posko B - Bengalon"
-    },
-    {
-        "username": "staff",
-        "nama": "dapi",
+        "username": "Arham",
+        "nama": "Arza",
+        "jenis_donasi": "Donasi Kesehatan dan Medis",
         "jumlah": 10000,
         "metode": "E-Wallet",
-        "lokasi": "Posko B - Bengalon"
+        "lokasi": "Sangatta"
     },
     {
-        "username": "staff",
-        "nama": "dapay",
-        "jumlah": 15000,
-        "metode": "Tunai (dicatat oleh Staff)",
-        "lokasi": "Posko A - Sangatta"
-    },
-    {
-        "username": "staff",
-        "nama": "dapay",
+        "username": "Arham",
+        "nama": "Arzak",
+        "jenis_donasi": "Donasi Kebakaran",
         "jumlah": 15000,
         "metode": "E-Wallet",
-        "lokasi": "Posko A - Sangatta"
+        "lokasi": "Jakarta"
     },
     {
-        "username": "staff",
-        "nama": "jihann",
-        "jumlah": 10000,
-        "metode": "Tunai (dicatat oleh Staff)",
-        "lokasi": "Posko A - Sangatta"
-    },
-    {
-        "username": "jihan",
-        "nama": "jihann",
-        "jumlah": 20000,
+        "username": "Arham",
+        "nama": "Arham",
+        "jenis_donasi": "Donasi Bencana Alam",
+        "jumlah": 100000,
         "metode": "E-Wallet",
-        "lokasi": "Posko A - Sangatta"
+        "lokasi": "Rantau Pulung"
     },
     {
-        "username": "Davi",
-        "nama": "dapi",
-        "jumlah": 10000,
-        "metode": "E-Wallet",
-        "lokasi": "Posko A - Sangatta"
-    },
-    {
-        "username": "sab",
-        "nama": "Sab",
-        "jumlah": 150000,
-        "metode": "E-Wallet",
-        "lokasi": "Posko A - Sangatta"
-    },
-    {
-        "username": "Iqbal",
-        "nama": "Iqbal",
+        "username": "Arham",
+        "nama": "Arga",
+        "jenis_donasi": "Donasi Pendidikan",
         "jumlah": 15000,
         "metode": "E-Wallet",
-        "lokasi": "Posko A - Sangatta"
-    },
-    {
-        "username": "Davi",
-        "nama": "Dapih",
-        "jumlah": 12000,
-        "metode": "E-Wallet",
-        "lokasi": "Posko A - Sangatta"
-    },
-    {
-        "username": "staff",
-        "nama": "Iqbal",
-        "jumlah": 15000,
-        "metode": "Tunai (dicatat oleh Staff)",
-        "lokasi": "Posko B - Bengalon"
-    },
-    {
-        "username": "Davi",
-        "nama": "Dappi",
-        "jumlah": 20000,
-        "metode": "E-Wallet",
-        "lokasi": "Posko A - Sangatta"
+        "lokasi": "Muara Wahau"
     }
 ]
