@@ -237,11 +237,47 @@ Setelah User memilih jumlah donasi maka Struk belanja akan keluar
 <img width="496" height="279" alt="Screenshot (53)" src="https://github.com/user-attachments/assets/8fa97eb2-e0c0-4c0f-baeb-1d647ed1bc02" />
 
 
-# Run user (Lihat Donasi)
-# Run user (Lihat Donasi)
-# Run user (Lihat Donasi)
+# Run user 4 (Lihat Donasi)
+Lanjuut pada fitur Lihat donasi, User bisa memasukan nomor 2
 
-# Run  user (Top up Saldo)
+<img width="380" height="199" alt="Screenshot (58)" src="https://github.com/user-attachments/assets/1fab05c9-f84c-40a3-bf77-0cd912a6f7de" />
+
+# Run user 4 (Lihat Donasi)
+Setelah itu akan muncul Tabel donasi dan Total Donasi yang diterima
+
+<img width="838" height="471" alt="Screenshot (59)" src="https://github.com/user-attachments/assets/2acf1aab-d484-4f1e-af97-5e5b95ca0c78" />
+
+# Run user 4 (Lihat Donasi)
+Jika user ingin mengSortir donasi maka user bisa memasukan angka 1
+
+<img width="816" height="474" alt="Screenshot (64)" src="https://github.com/user-attachments/assets/1c3922da-8c07-4178-823f-012813bf7be3" />
+
+# Run  user 4 (Top up Saldo)
+Pada opsi ini User bisa memilih untuk mensortir dari jumlah Terkecil-Terbesar / Terbesar-Terkecil
+
+<img width="342" height="192" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/33cfd6f1-ca0a-47dd-b4b4-44e0b055880c" />
+
+# Run  user 4 (Top up Saldo)
+jika memilih Terkecil-Terbesar maka urutan donasi akan berubah dengan urutan nominal terkecil paling atas
+
+<img width="862" height="436" alt="Screenshot (65)" src="https://github.com/user-attachments/assets/087d7ed1-8543-4fe4-8e2e-aa0330cee642" />
+
+# Run  user 4 (Top up Saldo)
+jika memilih Terbesar-Terkecil maka urutan donasi akan berubah dengan urutan nominal Terbesar paling atas
+
+<img width="836" height="455" alt="Screenshot (66)" src="https://github.com/user-attachments/assets/25a46585-f947-467b-b41a-f0035264f19a" />
+
+# Run  user 4 (Top up Saldo)
+jika user ingin membatalkan pilihan bisa memasukan angka 0 dan akan kembali ke Tabel donasi
+
+<img width="285" height="190" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/bff63117-d1bb-4c80-9966-7772cc4399e0" />
+
+# Run  user 4 (Top up Saldo)
+User bisa memasukan angka 0 untuk kembali ke menu User
+
+<img width="826" height="471" alt="Screenshot (68)" src="https://github.com/user-attachments/assets/64729790-09eb-411e-8fd6-1787a0ffa694" />
+
+
 <img width="315" height="214" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/35c21299-3dd8-45d4-b98c-09a12f4be14d" />
 # Run  user (Top up Saldo)
 
