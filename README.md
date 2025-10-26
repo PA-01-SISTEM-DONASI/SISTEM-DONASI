@@ -110,80 +110,68 @@ Untuk masuk sebagai staff, Login dengan username staff dan password 12345.
 Karena pada sistem ini kami gunakan library pwinput, password yang diisi pada saat login otomatis akan disembunyikan atau diganti dengan tanda *****
 
 # RUN 2 Staff
-Pada menu staff, terdapat 6 pilihan menu yang dapat diakses, seperti: 
-1. Tambah Donasi
-2. Lihat Donasi
-3. Edit Donasi
-4. Hapus Donasi
-5. Kelola Posko
-0. Logout
+Menu ini menampilkan pilihan utama untuk staff, yaitu **1. Kelola Donasi** untuk mengelola seluruh proses donasi, atau **0. Logout** untuk keluar dari sistem. Staff diminta memasukkan nomor menu yang ingin dipilih.
 
-<img width="594" height="288" alt="image" src="https://github.com/user-attachments/assets/de1a05cd-522a-4254-9e52-5abf8999ff89" />
+<img width="435" height="125" alt="Screenshot 2025-10-26 204028" src="https://github.com/user-attachments/assets/09d5c8e9-55ed-4708-b355-2cc89d939591" />
 
 Untuk mengakses menu-menu tersebut, cukup input nomor pada menu tersebuut. Contoh untuk mengakses menu tambah donasi, input angka 1 lalu enter untuk masuk ke menu tersebut. 
-# RUN 3 Staff (Tambah Donasi)
-Menu pertama pada role staff yaitu Tambah Donasi. Menu ini berfungsi agar para staff dapat ikut berdonasi melalui sistem ini. Untuk masuk menu ini, input angka 1 lalu enter. 
 
-<img width="257" height="247" alt="Screenshot 2025-10-26 134728" src="https://github.com/user-attachments/assets/fe599d7d-894c-4b0d-bfe0-4a9c450cd77d" />
+# RUN 3 Staff (Kelola Donasi)
+Menu ini adalah bagian **Kelola Donasi** untuk staff, menampilkan berbagai opsi pengelolaan donasi, seperti menambah jenis donasi atau posko, melihat dan mengedit data donasi, serta menghapus posko. Staff diminta memasukkan nomor menu yang ingin dijalankan.
 
-# RUN 4 Staff (Tambah Donasi)
-# RUN 5 Staff (Tambah Donasi)
-# RUN 6 Staff (Tambah Donasi)
+<img width="891" height="657" alt="Screenshot 2025-10-26 204150" src="https://github.com/user-attachments/assets/cc28492d-d1bb-4258-826a-8ee4e9ff9591" />
 
-# RUN  Staff (Lihat Donasi)
-Menu kedua pada role staff yaitu Lihat Donasi. Menu ini memiliki fungsi agar para staff dapat memantau atau melihat data donasi beserta jumlah donasi yang masuk. Masuk ke menu ini cukup input angka 2 lalu enter. 
+# RUN 4 Staff (Tambah Jenis Donasi)
+Staff diminta untuk memasukkan nama jenis donasi baru, dengan contoh seperti *Donasi Hewan Terlantar* atau *Donasi Korban Perang*. Setelah nama dimasukkan, sistem menambahkan jenis donasi tersebut dan menampilkan konfirmasi keberhasilan, misalnya *“Jenis donasi 'Donasi Tanah Longsor' berhasil ditambahkan!”*.
 
-<img width="724" height="281" alt="Screenshot 2025-10-26 134804" src="https://github.com/user-attachments/assets/ba9e478f-b6f6-48fd-9cb2-c5959345c429" />
+<img width="779" height="275" alt="Screenshot 2025-10-26 204413" src="https://github.com/user-attachments/assets/726e798f-f756-4c84-aa17-3de5f49f5f8a" />
 
-# RUN  Staff (Edit Donasi)
-Selanjutnya pada menu ketiga di role staff adalah Edit Donasi. Tujuan dari menu ini adalah untuk staff dapat melakukan pengubahan pada data donasi jika terjadi kesalahan input pada user maupun staff yang lain. Pada menu ini yang dapat di edit adalah nama donatur dan posko donasi. Untuk masuk ke menu ini, input angka 3, lalu enter. 
+# RUN 5 Staff (Tambah Posko)
+Staff diminta memasukkan nama lokasi posko baru, dengan contoh seperti *Sangatta*, *Bengalon*, atau *Muara Ancalong*. Setelah dimasukkan, sistem menambahkan posko tersebut dan menampilkan konfirmasi keberhasilan, misalnya *“Posko 'Samarinda' berhasil ditambahkan!”*.
 
-<img width="256" height="244" alt="Screenshot 2025-10-26 140035" src="https://github.com/user-attachments/assets/551e9ebd-11da-48bb-8664-f0085925d792" />
+<img width="705" height="249" alt="Screenshot 2025-10-26 204639" src="https://github.com/user-attachments/assets/32b1635b-6e78-4d8b-a83a-32145b40a1af" />
 
-# RUN  Staff (Edit Donasi)
-Setelah masuk pada menu, tekan enter sekali untuk lanjut mengedit dan setelah itu isi nama donatur yang sesuai pada sistem yang ingin di edit. Lalu, tekan enter kembali. 
+# RUN 6 Staff (Lihat Donasi)
+Menu ini menampilkan seluruh data donasi yang telah dilakukan, termasuk username, nama donatur, jenis donasi, jumlah, metode pembayaran, dan posko. Di bagian bawah ditampilkan total donasi, serta opsi untuk **mencari donasi**, **menyortir donasi**, atau **kembali** ke menu sebelumnya. 
 
+<img width="1164" height="406" alt="Screenshot 2025-10-26 204824" src="https://github.com/user-attachments/assets/871dfe8a-f09a-4b1a-a0dd-426a7757e6cb" />
 
-# RUN  Staff (Edit Donasi)
-Setelah mengisi nama donatur  dan enter, maka akan muncul untuk mengedit nama donatur. Jika yang ingin di edit adalah nama dari donatur, maka input nama baru dari donatur tersebut. 
+# RUN 7 Staff (Lihat Jenis Donasi)
+Menu ini menampilkan daftar semua jenis donasi beserta ID-nya. Staff dapat menekan Enter untuk kembali ke menu sebelumnya.
 
-<img width="458" height="101" alt="Screenshot 2025-10-26 141344" src="https://github.com/user-attachments/assets/b30e1e4b-af55-4f7b-92d6-11a9bdcd565e" />
+<img width="535" height="367" alt="Screenshot 2025-10-26 205217" src="https://github.com/user-attachments/assets/afbc947c-0fac-4b51-a77d-6e4a1ba1963b" />
+ 
+# RUN 8 Staff (Lihat Posko Donasi)
+Menu ini menampilkan daftar semua posko donasi beserta ID-nya. Staff dapat menekan Enter untuk kembali ke menu sebelumnya.
 
-# RUN  Staff (Edit Donasi)
-# RUN 10 Staff (Edit Donasi)
+<img width="540" height="347" alt="Screenshot 2025-10-26 205438" src="https://github.com/user-attachments/assets/0ca9dd70-ae86-46cb-b2d2-d3b6526cea12" />
 
-# RUN  Staff (Hapus Donasi)
-Lanjut ke menu keempat yaitu Hapus Donasi. Menu ini berfungsi agar para staff dapat menghapus data donasi yang tidak valid. Untuk masuk ke menu ini input angka 4, lalu enter.
+# RUN 9 Staff (Edit Donasi)
+- Menu **Edit Donasi** menampilkan daftar donasi yang sudah tercatat beserta total donasi, lalu meminta staff memasukkan nomor donasi yang ingin diedit atau 0 untuk batal.
 
-<img width="254" height="247" alt="image" src="https://github.com/user-attachments/assets/69afbe78-7e5f-4c08-9b3c-cf31a6f02723" />
+<img width="1061" height="313" alt="Screenshot 2025-10-26 205742" src="https://github.com/user-attachments/assets/448ecc04-453a-4450-abc6-5f94848bc836" />
 
-# RUN  Staff (Hapus Donasi)
-# RUN  Staff (Hapus Donasi)
-Cukup input nama donatur untuk menghapus data donasi. Setelah menginput nama donatur yang ingin dihapus, tekan enter.
+- Staff dapat mengubah data donasi yang dipilih. Pada contoh ini, sistem meminta input nama donatur; jika ingin mengubahnya, staff mengetik nama baru, misalnya *shafira*, atau menekan Enter untuk tetap menggunakan nama lama.
 
-<img width="439" height="57" alt="Screenshot 2025-10-26 141927" src="https://github.com/user-attachments/assets/de54056f-2fbb-4ad5-9186-6ec49db90d0f" />
+<img width="683" height="78" alt="Screenshot 2025-10-26 205927" src="https://github.com/user-attachments/assets/92bb88bf-0d60-4fc3-a0cb-a77a3310f83e" />
 
-# RUN  Staff (Hapus Donasi)
-Jika udah menginput dan tekan enter, maka akan muncul output verifikasi apakah yakin untuk menghapus atau tidak. Jika yakin untuk menghapus input "y" lalu tekan enter, jika tidak yakin maka input "n" lalu enter untuk membatalkan.
+- Staff dapat mengubah jenis donasi dari data yang dipilih. Sistem menampilkan daftar jenis donasi, dan staff dapat memilih nomor baru (misalnya 2) atau menekan Enter untuk tidak mengubah jenis donasi.
 
-<img width="431" height="52" alt="Screenshot 2025-10-26 142324" src="https://github.com/user-attachments/assets/8da9bf8f-0d8b-49ae-9800-31dfabc88984" />
+<img width="693" height="232" alt="Screenshot 2025-10-26 210155" src="https://github.com/user-attachments/assets/3336ab48-80ae-4d78-b5d1-4fb0a1fc97f9" />
 
-# RUN  Staff (Hapus Donasi)
-Jika yakin dan telah tekan enter maka akan memberikan output "Data donasi berhasil dihapus".
+- Staff dapat mengubah lokasi posko dari data donasi yang dipilih. Sistem menampilkan daftar posko, dan staff dapat memilih nomor baru (misalnya 5) atau menekan Enter untuk tidak mengubah lokasi. Setelah itu, sistem menampilkan konfirmasi *“Data donasi berhasil diperbarui”*.
 
-<img width="434" height="126" alt="Screenshot 2025-10-26 142332" src="https://github.com/user-attachments/assets/a863c05b-d2de-41ad-87ff-81d1a8d10236" />
+<img width="687" height="280" alt="Screenshot 2025-10-26 210253" src="https://github.com/user-attachments/assets/29daff3e-4809-457d-92ce-cd8f0288ddff" />
 
-# RUN  Staff (Hapus Donasi)
-Jika tidak yakin atau batal menghapus dan tekan enter, maka akan memberikan output.
+# RUN 10 Staff (Hapus Posko Donasi)
+- Menu **Hapus Posko Donasi** menampilkan daftar posko yang tersedia dan meminta staff memasukkan nama posko yang ingin dihapus atau 0 untuk batal.
 
-<img width="461" height="91" alt="Screenshot 2025-10-26 143102" src="https://github.com/user-attachments/assets/e05d4cdc-69cd-40d9-916f-e16b59cf25e1" />
+<img width="788" height="360" alt="Screenshot 2025-10-26 210447" src="https://github.com/user-attachments/assets/8d6dc282-2359-4eff-8c34-2cd651e19c74" />
 
-# RUN  Staff (Kelola Posko)
+- Staff diminta mengonfirmasi penghapusan posko yang dipilih. Jika memilih **y**, sistem akan menghapus posko tersebut dan menampilkan konfirmasi, misalnya *“Posko 'Sangatta' berhasil dihapus”*.
 
-# RUN Staff (Kelola Posko)
-# RUN Staff (Kelola Posko)
-# RUN Staff (Kelola Posko)
-# Run  Staff (Keluar)
+<img width="770" height="120" alt="Screenshot 2025-10-26 210650" src="https://github.com/user-attachments/assets/0d3ac43e-0285-4f6e-a320-0fc30b40765d" />
+
 # Role
 Lanjut untuk role yang kedua adalah Role User. Berikut panduan penggunaan untuk role staff.
 # Run 1 user
