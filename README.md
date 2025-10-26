@@ -193,33 +193,33 @@ Setelah masuk ke menu user, pencet nomor 1, yaitu Tambah donasi
 
 <img width="361" height="203" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/7535716f-430d-4e11-9ccd-7e2068789224" />
 
-# Run 4 user (Tambah Donasi)
+# Run 4 user (Pilih jenis donasi)
 Setelah masuk, Akan muncul menu untuk memilih jenis Donasi
 
 <img width="315" height="214" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/55cf876e-b23f-4e28-918b-833806c39da7" />
 
-# Run 4 user (Tambah Donasi)
+# Run 4 user (Pilih jenis donasi)
 user bisa memilih jenis donasi yang user inginkan
 
 <img width="320" height="240" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/81678edf-33fa-4742-8480-c0254c462a6a" />
 
-# Run 5 user (Tambah Donasi)
+# Run 5 user (Pilih posko)
 SEtelah itu, User memilih posko mana yang user ingin dituju
 
 <img width="318" height="238" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/35461f97-dc53-4069-ad3f-bc50c1ee23ab" />
 
-# Run 7 user (Tambah Donasi)
+# Run 7 user (Nama donatur)
 User bisa masukan Nama Donatur
 
 <img width="471" height="265" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/1fb50626-8480-4403-a3e6-9b096b471ba3" />
 
-# Run 8 user (Tambah Donasi)
+# Run 8 user (Jumlah donasi)
 User bisa memilih jumlah Donasi
 
 <img width="471" height="265" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/080dc251-0e40-4032-87aa-ac6146c0e727" />
 
-# Run 9 user (Tambah Donasi)
-Setelah User memilih jumlah donasi maka Struk belanja akan keluar
+# Run 9 user (Struk donasi)
+Setelah User memilih jumlah donasi maka Struk Donasi akan keluar
 
 <img width="496" height="279" alt="Screenshot (53)" src="https://github.com/user-attachments/assets/8fa97eb2-e0c0-4c0f-baeb-1d647ed1bc02" />
 
@@ -239,27 +239,27 @@ Jika user ingin mengSortir donasi maka user bisa memasukan angka 1
 
 <img width="816" height="474" alt="Screenshot (64)" src="https://github.com/user-attachments/assets/1c3922da-8c07-4178-823f-012813bf7be3" />
 
-# Run user 13 (Lihat Donasi)
+# Run user 13 (Sortir donasi)
 Pada opsi ini User bisa memilih untuk mensortir dari jumlah Terkecil-Terbesar / Terbesar-Terkecil
 
 <img width="342" height="192" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/33cfd6f1-ca0a-47dd-b4b4-44e0b055880c" />
 
-# Run user 14 (Lihat Donasi)
+# Run user 14 (Data diurutkan)
 jika memilih Terkecil-Terbesar maka urutan donasi akan berubah dengan urutan nominal terkecil paling atas
 
 <img width="862" height="436" alt="Screenshot (65)" src="https://github.com/user-attachments/assets/087d7ed1-8543-4fe4-8e2e-aa0330cee642" />
 
-# Run user 15 (Lihat Donasi)
+# Run user 15 (Data di urutkan)
 jika memilih Terbesar-Terkecil maka urutan donasi akan berubah dengan urutan nominal Terbesar paling atas
 
 <img width="836" height="455" alt="Screenshot (66)" src="https://github.com/user-attachments/assets/25a46585-f947-467b-b41a-f0035264f19a" />
 
-# Run user 16 (Lihat Donasi)
+# Run user 16 (Lihat donasi)
 jika user ingin membatalkan pilihan bisa memasukan angka 0 dan akan kembali ke Tabel donasi
 
 <img width="285" height="190" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/bff63117-d1bb-4c80-9966-7772cc4399e0" />
 
-# Run user 17 (Lihat Donasi)
+# Run user 17 (Menu user)
 User bisa memasukan angka 0 untuk kembali ke menu User
 
 <img width="826" height="471" alt="Screenshot (68)" src="https://github.com/user-attachments/assets/64729790-09eb-411e-8fd6-1787a0ffa694" />
