@@ -193,120 +193,119 @@ Setelah masuk ke menu user, pencet nomor 1, yaitu Tambah donasi
 
 <img width="361" height="203" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/7535716f-430d-4e11-9ccd-7e2068789224" />
 
-# Run 3 user (Tambah Donasi)
+# Run 4 user (Tambah Donasi)
 Setelah masuk, Akan muncul menu untuk memilih jenis Donasi
 
 <img width="315" height="214" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/55cf876e-b23f-4e28-918b-833806c39da7" />
 
-# Run 3 user (Tambah Donasi)
+# Run 4 user (Tambah Donasi)
 user bisa memilih jenis donasi yang user inginkan
 
 <img width="320" height="240" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/81678edf-33fa-4742-8480-c0254c462a6a" />
 
-# Run 3 user (Tambah Donasi)
+# Run 5 user (Tambah Donasi)
 SEtelah itu, User memilih posko mana yang user ingin dituju
-
 
 <img width="318" height="238" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/35461f97-dc53-4069-ad3f-bc50c1ee23ab" />
 
-# Run 3 user (Tambah Donasi)
+# Run 7 user (Tambah Donasi)
 User bisa masukan Nama Donatur
 
 <img width="471" height="265" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/1fb50626-8480-4403-a3e6-9b096b471ba3" />
 
-# Run 3 user (Tambah Donasi)
+# Run 8 user (Tambah Donasi)
 User bisa memilih jumlah Donasi
 
 <img width="471" height="265" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/080dc251-0e40-4032-87aa-ac6146c0e727" />
 
-# Run 3 user (Tambah Donasi)
+# Run 9 user (Tambah Donasi)
 Setelah User memilih jumlah donasi maka Struk belanja akan keluar
 
 <img width="496" height="279" alt="Screenshot (53)" src="https://github.com/user-attachments/assets/8fa97eb2-e0c0-4c0f-baeb-1d647ed1bc02" />
 
 
-# Run user 4 (Lihat Donasi)
+# Run user 10 (Lihat Donasi)
 Lanjuut pada fitur Lihat donasi, User bisa memasukan nomor 2
 
 <img width="380" height="199" alt="Screenshot (58)" src="https://github.com/user-attachments/assets/1fab05c9-f84c-40a3-bf77-0cd912a6f7de" />
 
-# Run user 4 (Lihat Donasi)
+# Run user 11 (Lihat Donasi)
 Setelah itu akan muncul Tabel donasi dan Total Donasi yang diterima
 
 <img width="838" height="471" alt="Screenshot (59)" src="https://github.com/user-attachments/assets/2acf1aab-d484-4f1e-af97-5e5b95ca0c78" />
 
-# Run user 4 (Lihat Donasi)
+# Run user 12 (Lihat Donasi)
 Jika user ingin mengSortir donasi maka user bisa memasukan angka 1
 
 <img width="816" height="474" alt="Screenshot (64)" src="https://github.com/user-attachments/assets/1c3922da-8c07-4178-823f-012813bf7be3" />
 
-# Run user 4 (Lihat Donasi)
+# Run user 13 (Lihat Donasi)
 Pada opsi ini User bisa memilih untuk mensortir dari jumlah Terkecil-Terbesar / Terbesar-Terkecil
 
 <img width="342" height="192" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/33cfd6f1-ca0a-47dd-b4b4-44e0b055880c" />
 
-# Run user 4 (Lihat Donasi)
+# Run user 14 (Lihat Donasi)
 jika memilih Terkecil-Terbesar maka urutan donasi akan berubah dengan urutan nominal terkecil paling atas
 
 <img width="862" height="436" alt="Screenshot (65)" src="https://github.com/user-attachments/assets/087d7ed1-8543-4fe4-8e2e-aa0330cee642" />
 
-# Run user 4 (Lihat Donasi)
+# Run user 15 (Lihat Donasi)
 jika memilih Terbesar-Terkecil maka urutan donasi akan berubah dengan urutan nominal Terbesar paling atas
 
 <img width="836" height="455" alt="Screenshot (66)" src="https://github.com/user-attachments/assets/25a46585-f947-467b-b41a-f0035264f19a" />
 
-# Run user 4 (Lihat Donasi)
+# Run user 16 (Lihat Donasi)
 jika user ingin membatalkan pilihan bisa memasukan angka 0 dan akan kembali ke Tabel donasi
 
 <img width="285" height="190" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/bff63117-d1bb-4c80-9966-7772cc4399e0" />
 
-# Run user 4 (Lihat Donasi)
+# Run user 17 (Lihat Donasi)
 User bisa memasukan angka 0 untuk kembali ke menu User
 
 <img width="826" height="471" alt="Screenshot (68)" src="https://github.com/user-attachments/assets/64729790-09eb-411e-8fd6-1787a0ffa694" />
 
-# Run  user 5 (Top up Saldo)
+# Run  user 18 (Top up Saldo)
 Jika User ingin Top up Saldo maka User bisa memasukan angka 3
 
 <img width="361" height="203" alt="Screenshot (69)" src="https://github.com/user-attachments/assets/deb6706c-78e6-4fc2-99a8-8c27497892e6" />
 
-# Run  user 5 (Top up Saldo)
+# Run  user 19 (Top up Saldo)
 User bisa memasukan nominal yang di inginkan
 
 <img width="323" height="85" alt="Screenshot (70)" src="https://github.com/user-attachments/assets/cbebfd84-5b28-452d-9eae-0767098be95b" />
 
-# Run  user 5 (Top up Saldo)
+# Run  user 20 (Top up Saldo)
 Setelah memasukan nomminal yang di inginkan, maka saldo otomatis bertambah
 
 <img width="414" height="119" alt="Screenshot (71)" src="https://github.com/user-attachments/assets/71093312-c49b-44f0-85e7-1f8c8fe523a6" />
 
-# Run  user 5 (Top up Saldo)
+# Run  user 21 (Top up Saldo)
 User lalu menekan enter untuk kembali ke Menu User
 
 <img width="414" height="119" alt="Screenshot (71)" src="https://github.com/user-attachments/assets/892f1db4-436e-46ee-b919-9fd001de34d9" />
 
 
-# Run  user 6 (Cek Saldo)
+# Run  user 22 (Cek Saldo)
 Pada Menu, User bisa memasukan angka 4 untuk mengecek saldo
 
 <img width="252" height="211" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/54471714-cec8-45fe-b4f9-a9c0a6893a53" />
 
-# Run  user 6 (Cek Saldo)
+# Run  user 23 (Cek Saldo)
 User bisa menekan enter untuk kembali ke Menu User
 
 <img width="252" height="211" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/24f9521e-7835-48e8-9a7e-3f3cf7f97d52" />
 
-# Run  user 6 (Keluar)
+# Run  user 24 (Keluar)
 Pada Menu, User bisa memasukan angka 0 untuk Logout 
 
 <img width="286" height="213" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/ca988b6e-bfae-4bf6-a2aa-94616093361c" />
 
-# Run  user 6 (Keluar)
+# Run  user 25 (Keluar)
 Pada opsi ini user bisa Memasukan angka 0 untuk keluar dari program
 
 <img width="247" height="144" alt="Screenshot (77)" src="https://github.com/user-attachments/assets/dd9b6692-e497-4fd7-8321-ffddf5cec295" />
 
-# Run  user 6 (Keluar)
+# Run  user 26 (Keluar)
 Setelah menekan 0 maka User telah keluar dari program
 
 <img width="382" height="181" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/f57b209e-7b8d-455f-a583-fd878de84c16" />
