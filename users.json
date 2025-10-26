@@ -5,39 +5,9 @@
         "role": "Staff"
     },
     {
-        "username": "Davi",
+        "username": "Arham",
         "password": "1234",
-        "role": "User",
-        "saldo": 78000
-    },
-    {
-        "username": "Jaya",
-        "password": "123",
-        "role": "User",
-        "saldo": 0
-    },
-    {
-        "username": "user",
-        "password": "67899",
-        "role": "User",
-        "saldo": 0
-    },
-    {
-        "username": "jihan",
-        "password": "67899",
-        "role": "User",
-        "saldo": 40000
-    },
-    {
-        "username": "sab",
-        "password": "arham",
         "role": "User",
         "saldo": 100000
-    },
-    {
-        "username": "Iqbal",
-        "password": "1234",
-        "role": "User",
-        "saldo": 0
     }
 ]
