@@ -201,15 +201,22 @@ Pada menu user, terdapat 5 pilihan menu yang dapat diakses, seperti:
 
 
 # Run 3 user (Tambah Donasi)
-Setelah masuk ke menu user, pencet nomor 1
+Setelah masuk ke menu user, pencet nomor 1, yaitu Tambah donasi
+
+<img width="361" height="203" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/7535716f-430d-4e11-9ccd-7e2068789224" />
+
+# Run 3 user (Tambah Donasi)
+Setelah masuk, Akan muncul menu untuk memilih jenis donasi
 
 <img width="315" height="214" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/55cf876e-b23f-4e28-918b-833806c39da7" />
 
 # Run 3 user (Tambah Donasi)
-Setelah itu pilih jenis donasi yang di inginkan
+user bisa memilih jenis donasi yang user inginkan
 
 <img width="320" height="240" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/81678edf-33fa-4742-8480-c0254c462a6a" />
+
 # Run 3 user (Tambah Donasi)
+SEtelah itu, user memilih posko mana yang user ingin datangi
 
 
 <img width="318" height="238" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/35461f97-dc53-4069-ad3f-bc50c1ee23ab" />
