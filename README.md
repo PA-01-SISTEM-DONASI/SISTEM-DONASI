@@ -292,9 +292,12 @@ Pada Menu, User bisa memasukan angka 4 untuk mengecek saldo
 <img width="252" height="211" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/54471714-cec8-45fe-b4f9-a9c0a6893a53" />
 
 # Run  user 6 (Cek Saldo)
+User bisa menekan enter untuk kembali ke Menu User
 
-
-
-
+<img width="252" height="211" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/24f9521e-7835-48e8-9a7e-3f3cf7f97d52" />
 
 # Run  user (Keluar)
+Pada Menu, User bisa memasukan angka 0 untuk Logout 
+
+<img width="286" height="213" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/ca988b6e-bfae-4bf6-a2aa-94616093361c" />
+
