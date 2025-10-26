@@ -201,6 +201,16 @@ Pada menu user, terdapat 5 pilihan menu yang dapat diakses, seperti:
 
 
 # Run 3 user (Tambah Donasi)
+<img width="315" height="214" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/55cf876e-b23f-4e28-918b-833806c39da7" />
+
+<img width="320" height="240" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/81678edf-33fa-4742-8480-c0254c462a6a" />
+
+<img width="318" height="238" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/35461f97-dc53-4069-ad3f-bc50c1ee23ab" />
+
+<img width="372" height="279" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/1fcab3d3-acfb-4e5b-a6e7-9e5a6ce28f1b" />
+
+<img width="302" height="540" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/0a47c801-c3d4-4b6c-a3fd-b32167915a21" />
+
 
 # Run 4 user (Tambah Donasi)
 # Run 5 user (Tambah Donasi)
@@ -210,8 +220,9 @@ Pada menu user, terdapat 5 pilihan menu yang dapat diakses, seperti:
 # Run user (Lihat Donasi)
 
 # Run  user (Top up Saldo)
+<img width="315" height="214" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/35c21299-3dd8-45d4-b98c-09a12f4be14d" />
+# Run  user (Top up Saldo)
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/24b5c82e-bcdd-4ac8-bc8c-c204aef98111" />
 
 
 # Run  user (Cek Saldo)
