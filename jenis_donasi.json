@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nama": "Fakir dan Miskin"
+    },
+    {
+        "id": 2,
+        "nama": "Donasi Kebakaran"
+    },
+    {
+        "id": 3,
+        "nama": "Donasi Bencana Alam"
+    },
+    {
+        "id": 4,
+        "nama": "Donasi Pendidikan"
+    },
+    {
+        "id": 5,
+        "nama": "Donasi Kesehatan dan Medis"
+    },
+    {
+        "id": 6,
+        "nama": "Donasi Veteran"
+    }
+]
