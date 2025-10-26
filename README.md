@@ -296,8 +296,17 @@ User bisa menekan enter untuk kembali ke Menu User
 
 <img width="252" height="211" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/24f9521e-7835-48e8-9a7e-3f3cf7f97d52" />
 
-# Run  user (Keluar)
+# Run  user 6 (Keluar)
 Pada Menu, User bisa memasukan angka 0 untuk Logout 
 
 <img width="286" height="213" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/ca988b6e-bfae-4bf6-a2aa-94616093361c" />
 
+# Run  user 6 (Keluar)
+Pada opsi ini user bisa Memasukan angka 0 untuk keluar dari program
+
+<img width="247" height="144" alt="Screenshot (77)" src="https://github.com/user-attachments/assets/dd9b6692-e497-4fd7-8321-ffddf5cec295" />
+
+# Run  user 6 (Keluar)
+Setelah menekan 0 maka User telah keluar dari program
+
+<img width="382" height="181" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/f57b209e-7b8d-455f-a583-fd878de84c16" />
