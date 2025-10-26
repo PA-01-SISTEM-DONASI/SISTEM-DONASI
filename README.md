@@ -34,13 +34,41 @@ Pilihan menu pertama pada sistem ini yaitu Login. Untuk masuk menu login, input 
 # RUN 3
 Setelah masuk ke menu login, maka akan disuruh untuk mengisi username dan password. Untuk username dan password terbagi menjadi dua role, yaitu staff dan user. Untuk role staff, usernamenya "staff" dan untuk passwordnya adalah "12345". Lalu, untuk role user username dan password disesuaikan dengan yang telah dibuat sebelumnya. Pada sistem login ini, kami menggunakan library pwinput untuk melindungi password agar tidak terlihat saat proses login.
 
+Contoh login role staff:
+
 <img width="174" height="66" alt="Screenshot 2025-10-26 004320" src="https://github.com/user-attachments/assets/e57d1b14-2de8-43e5-b3a7-66bbb3f7f561" />
 
+Contoh login role user:
+
+<img width="160" height="67" alt="Screenshot 2025-10-26 113958" src="https://github.com/user-attachments/assets/fabea4ae-2912-4646-894b-6fe085218450" />
+
 # RUN 4
+Pilihan menu kedua yaitu Register. Menu ini berfungsi untuk user membuat username dan password terlebih dahulu sebelum menggunakan sistem. Untuk masuk pada menu Register input angka "2".
+
+<img width="227" height="131" alt="Screenshot 2025-10-23 222409" src="https://github.com/user-attachments/assets/6ac62c83-9c2b-4d75-aef2-9999a099882b" />
+
 # RUN 5
+Seteleh masuk menu Register, maka akan disuruh untuk mengisi username baru dan password. Pertama isi dulu username pada "Username baru: ", lalu enter dan isi "Password: ".
+
+<img width="263" height="42" alt="Screenshot 2025-10-23 222449" src="https://github.com/user-attachments/assets/4306d40f-4806-4c34-a5ae-7cc7de5acbb5" />
+
+Sebagai contoh, kami membuat username baru dengan nama Arham dan password 000.
+
 # RUN 6
+Setelah memasukkan username baru dan password, tekan enter pada keyboard hingga ada output "Registrasi berhasil" seperti gambar dibawah ini.
+
+<img width="233" height="73" alt="Screenshot 2025-10-23 222456" src="https://github.com/user-attachments/assets/4af3399f-ede4-44bb-88c0-4629587ae6e0" />
+
 # RUN 7
+Menu ketiga sekaligus terakhir pada menu utama kali ini adalah Keluar. Menu ini berfungsi jika kita ingin keluar pada sistem ini. Untuk keluar pada menu ini, cukup inputkan angka "0", lalu enter. 
+
+<img width="207" height="132" alt="Screenshot 2025-10-26 115039" src="https://github.com/user-attachments/assets/e68a0953-d035-4bc9-b926-dbce3139c9e4" />
+
 # RUN 8
+Hasil yang akan terjadi ketika memilih menu Keluar adalah seperti ini:
+
+<img width="279" height="139" alt="image" src="https://github.com/user-attachments/assets/c1176f92-d3dd-4cd1-997a-bdfb27e6a34f" />
+
 # RUN 9
 # RUN 10
 # RUN 11
